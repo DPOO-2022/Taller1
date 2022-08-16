@@ -283,7 +283,12 @@ public class ConsolaOlimpicos
 		String atleta = input("Por favor ingrese el nombre de un atleta");
 		String pais = calculadora.darPaisAtleta(atleta);
 		
-		System.out.println("El país que representa " + atleta + " es: " + pais);
+		if (pais != "")
+		{
+			System.out.println("El país que representa " + atleta + " es: " + pais);
+		}
+		else
+			System.out.println("El atleta no se encuentra");
 		}
 
 
