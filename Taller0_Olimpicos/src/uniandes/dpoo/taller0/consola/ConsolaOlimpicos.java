@@ -273,7 +273,7 @@ public class ConsolaOlimpicos
 	}
 	
 	/**
-	 * Ejecuta la opción para informarle al usuario el nombre del país al cual representa el atleta.
+	 *Le pide al usuario el nombre de un atleta y muestra el país el cual representa.
 	 */
 	
 	private void ejecutarPaisAtleta()
@@ -281,7 +281,7 @@ public class ConsolaOlimpicos
 		System.out.println("\n" + "País del atleta" + "\n");
 		
 		String atleta = input("Por favor ingrese el nombre de un atleta");
-		String pais = calculadora.buscarPaisAtleta(atleta);
+		String pais = calculadora.darPaisAtleta(atleta);
 		
 		System.out.println("El país que representa " + atleta + " es: " + pais);
 		}
